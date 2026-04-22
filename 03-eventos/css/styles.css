@@ -1,0 +1,171 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+  background: linear-gradient(135deg, #f7f2f4, #f3e8ff);
+  color: #444;
+  padding: 20px;
+}
+
+/* ===== CONTENEDORES ===== */
+.container {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  backdrop-filter: blur(10px);
+}
+
+/* ===== TITULOS ===== */
+h1, h2 {
+  color: #8e4a63;
+  margin-bottom: 15px;
+}
+
+/* ===== FORMULARIO ===== */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* ===== INPUTS ===== */
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #e6c6c6;
+  outline: none;
+  transition: 0.3s;
+  background: #fff;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #9b59b6;
+  box-shadow: 0 0 6px rgba(155, 89, 182, 0.3);
+}
+
+/* ===== BOTONES ===== */
+button {
+  background: linear-gradient(135deg, #9b59b6, #8e4a63);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+  font-weight: 500;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #7d3c98, #6e0f0f);
+}
+
+/* ===== BOTON ELIMINAR ===== */
+.btn-eliminar {
+  background: #e74c3c;
+}
+
+.btn-eliminar:hover {
+  background: #c0392b;
+}
+
+/* ===== ERRORES (IMPORTANTE) ===== */
+.error {
+  border: 2px solid #e74c3c !important;
+}
+
+.error-msg {
+  color: #e74c3c;
+  font-size: 12px;
+  display: none;
+}
+
+.error-msg.visible {
+  display: block;
+}
+
+/* ===== CONTADOR ===== */
+.char-count {
+  font-size: 12px;
+  text-align: right;
+  color: #9b59b6;
+}
+
+/* ===== RESULTADO ===== */
+#resultado {
+  margin-top: 15px;
+  padding: 12px;
+  background: #f3e8ff;
+  border-left: 5px solid #8e4a63;
+  border-radius: 10px;
+  display: none;
+}
+
+#resultado.visible {
+  display: block;
+}
+
+/* ===== INPUT GROUP ===== */
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+/* ===== INPUT NUEVA TAREA ===== */
+#nueva-tarea {
+  border: 2px solid #e0d4f7;
+}
+
+#nueva-tarea:focus {
+  border-color: #9b59b6;
+}
+
+/* ===== LISTA ===== */
+#lista-tareas {
+  list-style: none;
+}
+
+/* ===== TARJETAS ===== */
+#lista-tareas li {
+  background: #f3e8ff;
+  border-left: 5px solid #8e4a63;
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+/* ===== HOVER TARJETAS ===== */
+#lista-tareas li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+/* ===== TEXTO TAREA ===== */
+#lista-tareas span {
+  cursor: pointer;
+}
+
+/* ===== COMPLETADA ===== */
+.completada {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* ===== CONTADOR ===== */
+#contador-tareas {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #777;
+}
