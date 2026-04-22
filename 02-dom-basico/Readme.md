@@ -110,7 +110,7 @@ Se muestra la interfaz completa de la aplicación con la lista de elementos, inf
 
 ### 🔹 Filtrado
 
-![Filtrado](assets/02-%20filtrado.png)
+![Filtrado](assets/02-filtrado.png)
 
 **Descripción:**
 Se visualiza el funcionamiento del filtro por categoría, mostrando únicamente los elementos correspondientes.
