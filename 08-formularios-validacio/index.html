@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08 - Formularios y Validación</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <form id="form-registro" novalidate>
+
+  <input type="text" name="nombre" placeholder="Nombre" required>
+
+  <input type="email" name="email" placeholder="Email" required>
+
+  <input type="tel" name="telefono" placeholder="Teléfono" required>
+
+  <input type="date" name="fecha" required>
+
+  <select name="genero" required>
+    <option value="">Seleccione género</option>
+    <option value="m">Masculino</option>
+    <option value="f">Femenino</option>
+  </select>
+
+  <input type="password" name="password" placeholder="Contraseña" required>
+
+  <input type="password" name="confirmar" placeholder="Confirmar contraseña" required>
+
+  <label>
+    <input type="checkbox" name="terminos"> Acepto términos
+  </label>
+
+  <button type="submit">Enviar</button>
+
+</form>
+
+<div id="mensaje"></div>
+
+  <!-- Scripts -->
+  <script src="js/validacion.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

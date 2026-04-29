@@ -1,0 +1,119 @@
+/* ===== RESET BÁSICO ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+  background: linear-gradient(135deg, #fceaff, #e0f7fa);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* ===== CONTENEDOR ===== */
+form {
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 15px;
+  width: 400px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== INPUTS Y SELECT ===== */
+input,
+select {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  outline: none;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+/* HOVER / FOCUS */
+input:focus,
+select:focus {
+  border-color: #a78bfa;
+  box-shadow: 0 0 5px rgba(167, 139, 250, 0.5);
+}
+
+/* ===== BOTÓN ===== */
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #a78bfa;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #7c3aed;
+}
+
+/* ===== CHECKBOX ===== */
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 5px;
+}
+
+/* ===== VALIDACIONES ===== */
+.error {
+  border: 2px solid #ff4d4d !important;
+  background-color: #ffe6e6;
+}
+
+.valido {
+  border: 2px solid #4caf50 !important;
+  background-color: #eaffea;
+}
+
+/* ===== MENSAJES ===== */
+.mensaje-error {
+  color: #ff4d4d;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.mensaje-exito {
+  color: #4caf50;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* ===== FUERZA PASSWORD ===== */
+.fuerza {
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.fuerza.debil {
+  color: red;
+}
+
+.fuerza.media {
+  color: orange;
+}
+
+.fuerza.fuerte {
+  color: green;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 500px) {
+  form {
+    width: 90%;
+  }
+}
